@@ -17,7 +17,7 @@ async function getWeather() {
     );
 
     if (!response.ok) {
-      throw new Error("Ciudad no encontrada");
+      throw new Error("Ciudad no encontrada!");
     }
 
     const data = await response.json();
